@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!--Se aplica el icono para la pestaña-->
+    <link rel="shortcut icon" href="./images/logo.jpg">
+    <!--Se aplica Bootstrap por medio de CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!--se aplica estilo de CSS-->
+        <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!--ENCABEZADO DE LA PÁGINA-->
+        
+        <section id="logo" class="estilos">
+            <!--<p>LOGO</p>-->
+            <img src="./images/logo.jpg" alt="logo" width="200" height="180" >
+        </section>
+        <section id="nombre" class="estilos">
+            <p>Cintia Eliana Bravi</p>
+        </section>
+        <section id="matricula" class="estilos">
+            <p>MP.:4113</p>
+        </section>
+        
+
+        <!---MENÚ DE NAVEGACIÓN-->
+        <div class="container">
+            <nav class="navbar navbar-expand-sm sticky-top">  <!--bg-white navbar-white-->
+              <div class="container-fluid">
+                  <div class="navbar-brand">
+                      <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                          <div class="mb-3 mt-3">
+                            <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                      <a class="nav-link" href="./pages/mi-propuesta.html">Mi Propuesta</a>
+                      <a class="nav-link" href="./pages/atencion.html">Atención</a>
+                      <a class="nav-link" href="./pages/recetas.html">Receteas</a>
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </div>
+              </div>
+            </nav>
+      </div>
+
+        <!---FOTO PRINCIPAL Y PRESENTACIÓN-->
+        <div id="foto" class="container">
+            <span>
+                <h1 class="h1-sobre-mi">Sobre Mi</h1>
+            </span>
+            <span>
+                <img src="./images/foto-cintia.jpg" alt="foto.jpg" width="390" height="652,8"> <!--width="183,6" height="326,4"367,2-->
+                <p class="p-soy">Soy Cintia Eliana Bravi, Licenciada en Nutrición y especializada en Alimentación Vegetariana
+                 y Vegana en todas las etapas del ciclo vital. También tengo postítulo en Coaching Nutricional,
+                  y formo parte de la Sociedad Argentina de Medicina del Estilo de Vida. Además, estoy formando
+                   parte de MicrobiAr, en donde me desempeño como nutricionista tutora. Se trata de un estudio
+                    pionero en América Latina que busca mejorar la calidad de vida de las personas, cuya intervención
+                     se lleva a cabo en personas con obesidad prediabetes y diabetes.</p>
+            </span> 
+            <div id="presentacion" class="container" >
+                <h1 class="h1-mi-formacion">Mi Formación</h1>
+                <ul class="lista-formacion" style="list-style: none;">
+                    <li>- Licenciada en Nutrición(UNC).</li>
+                    <li>- Posgrado  Nutrición Vegetariana y Vegana(UNLP).</li>
+                    <li>- Posgrado Alimentación Basada en Plantas y Deportes(Nutrinfo).</li>
+                    <li>- Posgrado Alimentación Basada en Plantas en Pediatría, Embarazo y Lactancia(Nutrinfo).</li>
+                    <li>- Posgrado en Coaching Nutricional.</li>       
+                </ul>
+            </div>
+        </div>
+
+
+        
+
+        <footer id="pie-de-pagina" class="estilos">
+            <section class="redes-sociales">
+                <a href="https://www.twitter.com/">
+                    <img src="./icon/gorjeo.png" alt="twitter.png" width="25" height="25">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./icon/facebook.png" alt="facebook.png" width="25" height="25">
+                </a>
+                <a href="https://www.instagram.com/">
+                <img src="./icon/instagram.png" alt="instagram.png" width="25" height="25">
+                </a>
+            </section>
+            <section class="copyright">Copyright®</section>
+            <section class="by"> 
+                <strong>by Elvis Galvalisi</strong> 
+            </section>   
+        </footer>
+
+
+    </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+
+/*--------------aplica para todas las paginas--------------------*/ 
+
+.container {
+    background-color: rgb(241, 237, 220);
+    max-width: 100%; 
+}
+
+@font-face {
+    font-family: 'Kaushan Script Regular';
+    src: url("../fonts/KaushanScript-Regular.ttf");
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#nombre {
+    grid-area: nombre;
+    text-align: center;
+    background-color:rgb(206, 225, 223);
+    font-family: 'Kaushan Script Regular', cursive;
+    font-size: 60px;
+}
+
+#matricula {
+    grid-area: matricula;
+    text-align: center;
+    background-color:rgb(206, 225, 223);
+    font-family: 'Kaushan Script Regular';
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pie-de-pagina{
+    grid-area: pie;
+    display: inline-block;
+    text-align: center;
+    background-color:rgb(206, 225, 223);
+    height: 100px;
+    padding-top: 20px;  
+}
+
+.by{
+    text-align: right;
+    margin-right: 100px;
+}
+.copyright{
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+
+/*--------------aplica para el index--------------------*/ 
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav foto"
+    "nav presentacion"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+    /*border: 2px solid black;*/
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    height: 100vh;
+    margin: 0;
+}
+
+.h1-sobre-mi{
+    text-align: center;
+    font-family: 'Tahoma';    
+}
+.p-soy {
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:'Tahoma';
+    font-size: 130%;
+}
+
+#foto{
+    grid-area: foto;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid grey;
+}
+
+#presentacion{
+    grid-area: presentacion;
+    text-align:center;
+    font-family: 'Tahoma';
+}
+
+.lista-formacion{
+    text-align: left;
+     margin-left:80px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+
+
+
+/*-----------------------pagina mi-propuesta----------------------*/
+#mi-propuesta{
+    grid-area: propuesta;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid grey;
+}
+.h1-propuesta{
+    padding-bottom: 25px;
+}
+.p-mi{
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:'Tahoma';
+    font-size: 130%;
+}
+.grid-container-propuesta{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav propuesta"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    height: 100vh;
+    margin: 0;
+}
+
+/*-----------------------pagina atención----------------------*/
+.grid-container-atencion{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav atencion"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+   
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    height: 100vh;
+    margin: 0;
+}
+.p-virtual{
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:'Tahoma';
+    font-size: 130%;
+}
+.p-consultorio{
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+#atencion{
+    grid-area: atencion;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid grey;
+}
+.h1-atencion{
+    padding-bottom: 25px;
+}
+
+/*-----------------------pagina recetas----------------------*/
+
+.grid-container-recetas{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav recetas"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+   
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    height: 100vh;
+    margin: 0;
+}
+
+#recetas{
+    grid-area: recetas;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid grey;
+}
+.p-recetas{
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.h1-recetas{
+    padding-bottom: 25px;
+}
+
+.h2-recetas{
+    padding-bottom: 10px;
+}
+
+/*-----------------------pagina Contacto----------------------*/
+
+.grid-container-contacto{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav contacto"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+   
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    height: 100vh;
+    margin: 0;
+}
+
+#contacto{
+    grid-area: contacto;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid grey;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.mapa{
+    padding-bottom: 10px;
+    padding-top: 10px;  
+    text-align: center;
+}
