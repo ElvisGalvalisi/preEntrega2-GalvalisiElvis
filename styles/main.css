@@ -21,6 +21,14 @@
     background-color:rgb(206, 225, 223);
     font-family: 'Kaushan Script Regular', cursive;
     font-size: 60px;
+    padding-top: 30px;
+}
+/*se agrega media queries para adaptar a mobile*/
+@media(max-width: 700px){
+    #nombre{
+        font-size: 40px;
+        padding-top: 50px;
+    }
 }
 
 #matricula {
@@ -237,7 +245,7 @@ a {
     "logo matricula"
     "nav contacto"
     "pie pie";
-    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-rows: 120px 60px 1fr 1fr; 
     grid-template-columns: 200px 1fr;
    
 
@@ -256,7 +264,8 @@ a {
     padding-left: 100px;
     padding-right: 100px;
 }
-.mapa{
+
+#mapa{
     padding-bottom: 10px;
     padding-top: 10px;  
     text-align: center;
