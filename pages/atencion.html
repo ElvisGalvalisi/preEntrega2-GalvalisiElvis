@@ -13,12 +13,11 @@
     <link rel="shortcut icon" href="../images/logo.jpg">
 </head>
 <body>
-    <div class="grid-container-atencion">
-
+    <div class="grid-container-info">
         <!--ENCABEZADO DE LA PÁGINA-->
-        <section id="logo" class="estilos">
-            <!--<p>LOGO</p>-->
-            <img src="../images/logo.jpg" alt="logo" width="200" height="180" >
+        <section id="logo">
+            <!-- LOGO -->
+            <img class="logo-cintia" src="../images/logo.jpg" alt="logo">
         </section>
         <section id="nombre" class="estilos">
             <p>Cintia Eliana Bravi</p>
@@ -26,27 +25,30 @@
         <section id="matricula" class="estilos">
             <p>MP.:4113</p>
         </section>
-
-        <!--MENÚ -->
+        
         <div class="container">
-            <nav class="navbar navbar-expand-sm sticky-top">  
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-                            <div class="mb-3 mt-3">
-                              <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Buscar</button>
-                          </form>
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="./mi-propuesta.html">Mi propuesta</a>
-                        <a class="nav-link" href="./recetas.html">Recetas</a>
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+            <nav class="navbar navbar-expand-sm sticky-top">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container-fluid">
+                        <div class="navbar-brand flex-sm-column">
+                            <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                                <div class="mb-3 mt-3">
+                                    <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Buscar</button>
+                            </form>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="./mi-propuesta.html">Mi propuesta</a>
+                            <a class="nav-link" href="./recetas.html">Recetas</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </div>
                     </div>
                 </div>
-              </nav>
+            </nav>
         </div>
-        
         <!--Contenido de Atención-->
         <div id="atencion" class="container">
             <span>
@@ -54,7 +56,7 @@
             </span>
 
             <span>
-                <img src="../images/atencion-virtual.jpg" alt="Atencion Virtual" width="300" height="300">
+                <img class="foto-atencion-v" src="../images/atencion-virtual.jpg" alt="Atencion Virtual"> 
                 <p class="p-virtual">Las consultas virtuales se realizan con la plataforma Zoom o Meet.
                 Es muy importante tener conocimiento con éstas herramientas y tener probados micrófono y parlantes
                 para una mejor experiencia y aprovechar el tiempo al máximo.
@@ -63,7 +65,7 @@
             </span>
     
             <span>
-                <img src="../images/consultorio-gardenia.png" alt="Imagen Gardenia" width="300" height="300">
+                <img class="foto-gardenia" src="../images/consultorio-gardenia.png" alt="Imagen Gardenia"> 
 
                 <ul class="p-consultorio" style="list-style: none;">
                     <li>Horarios en Centro Gardenia:</li>

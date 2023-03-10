@@ -13,21 +13,53 @@
 
 #logo{
     grid-area: logo;
+
 }
+/*400*/
+@media(max-width: 750px){
+    #logo2{
+        text-align: center;
+        width: auto;
+        height:auto;
+        background-color:rgb(206, 225, 223);
+    }
+}
+@media(max-width: 580px){
+    #logo{
+        text-align: center;
+        width: auto;
+        height:auto;
+        background-color:rgb(206, 225, 223);
+    }
+}
+
+.logo-cintia{
+    width: 200px;
+    height: 180px;
+}
+
+@media(max-width: 575px){
+    .logo-cintia{
+        width: 150px;
+        height: 120px;
+    }
+
+}
+
 
 #nombre {
     grid-area: nombre;
     text-align: center;
     background-color:rgb(206, 225, 223);
     font-family: 'Kaushan Script Regular', cursive;
-    font-size: 60px;
-    padding-top: 30px;
+    font-size: 50px;
+    /*padding-top: 0px;*/
 }
 /*se agrega media queries para adaptar a mobile*/
-@media(max-width: 700px){
+@media(max-width: 650px){
     #nombre{
-        font-size: 40px;
-        padding-top: 50px;
+        font-size: 40px; /*40px*/
+       /* padding-top: auto; 50px*/
     }
 }
 
@@ -39,6 +71,7 @@
     font-size: 20px;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -49,12 +82,12 @@ a {
     text-align: center;
     background-color:rgb(206, 225, 223);
     height: 100px;
-    padding-top: 20px;  
+    padding-top: 20px; 
 }
 
 .by{
     text-align: right;
-    margin-right: 100px;
+    margin-right: 30px; /*180*/
 }
 .copyright{
     padding-top: 10px;
@@ -81,6 +114,27 @@ a {
     height: 100vh;
     margin: 0;
 }
+/*               */
+@media(max-width: 575px){
+    .grid-container{
+        grid-template-areas: 
+        "logo"
+        "nombre"
+        "matricula" 
+        "nav" 
+        "foto"
+        "presentacion"
+        "pie";
+        grid-template-rows: 120px 60px 1fr 1fr 1fr 1fr 75px; 
+        grid-template-columns:100%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    
+}
 
 .h1-sobre-mi{
     text-align: center;
@@ -88,8 +142,8 @@ a {
 }
 .p-soy {
     text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-family:'Tahoma';
     font-size: 130%;
 }
@@ -102,6 +156,25 @@ a {
     border: 1px solid grey;
 }
 
+@media(max-width: 600px){
+    #foto{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.foto-cintia{
+    width: 390px;
+    height: 652.8px;
+}
+
+@media(max-width: 600px){
+    .foto-cintia{
+        width: 260px; 
+        height: 435.2px; 
+    }
+}
+
 #presentacion{
     grid-area: presentacion;
     text-align:center;
@@ -110,8 +183,8 @@ a {
 
 .lista-formacion{
     text-align: left;
-     margin-left:80px;
-    margin-right: 100px;
+     margin-left:30px;
+    margin-right: 30px;
     font-size: 20px;
 }
 
@@ -120,28 +193,49 @@ a {
 
 /*-----------------------pagina mi-propuesta----------------------*/
 #mi-propuesta{
-    grid-area: propuesta;
+    grid-area: info;
     text-align: center;
     padding-top: 25px;
     border: 1px solid grey;
 }
+
+
+@media(max-width: 860px){
+    #mi-propuesta{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.foto-propuesta{
+    height: 550px; 
+    width: 550px; 
+}
+
+@media(max-width: 900px){
+    .foto-propuesta {
+        height: 350px;
+        width: 350px;
+    }
+}
+
 .h1-propuesta{
     padding-bottom: 25px;
 }
 .p-mi{
     text-align: justify;
     padding-top: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-family:'Tahoma';
-    font-size: 130%;
+    font-size: 100%;
 }
-.grid-container-propuesta{
+.grid-container-info{
     display: grid;
     grid-template-areas: 
     "logo nombre"
     "logo matricula"
-    "nav propuesta"
+    "nav info"
     "pie pie";
     grid-template-rows: 120px 60px 1fr 75px; 
     grid-template-columns: 200px 1fr;
@@ -151,42 +245,73 @@ a {
    
     height: 100vh;
     margin: 0;
+}
+
+@media(max-width: 575px){
+    .grid-container-info{
+        grid-template-areas: 
+    "logo" 
+    "nombre"
+    "matricula"
+    "nav" 
+    "info"
+    "pie";
+    grid-template-rows: 120px 60px 1fr 1fr 1fr 75px; 
+    grid-template-columns: 100%;
+
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    }
 }
 
 /*-----------------------pagina atención----------------------*/
-.grid-container-atencion{
-    display: grid;
-    grid-template-areas: 
-    "logo nombre"
-    "logo matricula"
-    "nav atencion"
-    "pie pie";
-    grid-template-rows: 120px 60px 1fr 75px; 
-    grid-template-columns: 200px 1fr;
-   
 
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
-    height: 100vh;
-    margin: 0;
+.foto-atencion-v{
+    width: 300px;
+    height: 300px;
 }
+@media(max-width: 575px){
+    .foto-atencion-v{
+        width: 200px;
+        height: 200px;
+
+    }
+}
+
 .p-virtual{
     text-align: justify;
     padding-top: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-family:'Tahoma';
     font-size: 130%;
 }
+
+.foto-gardenia{
+    width: 300px;
+    height: 300px;
+}
+
+@media(max-width: 575px){
+    .foto-gardenia{
+        width: 200px;
+        height: 200px;
+
+    }
+}
+
 .p-consultorio{
     text-align: left;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 20px;
 }
 #atencion{
-    grid-area: atencion;
+    grid-area: info;
     text-align: center;
     padding-top: 25px;
     border: 1px solid grey;
@@ -197,34 +322,30 @@ a {
 
 /*-----------------------pagina recetas----------------------*/
 
-.grid-container-recetas{
-    display: grid;
-    grid-template-areas: 
-    "logo nombre"
-    "logo matricula"
-    "nav recetas"
-    "pie pie";
-    grid-template-rows: 120px 60px 1fr 75px; 
-    grid-template-columns: 200px 1fr;
-   
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
-    height: 100vh;
-    margin: 0;
-}
-
 #recetas{
-    grid-area: recetas;
+    grid-area: info;
     text-align: center;
     padding-top: 25px;
     border: 1px solid grey;
 }
+
+.foto-receta{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 575px) {
+    .foto-receta{
+        width: 100px;
+        height: 100px; 
+    }
+    
+}
+
 .p-recetas{
     text-align: left;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 20px;
 }
 
@@ -238,32 +359,15 @@ a {
 
 /*-----------------------pagina Contacto----------------------*/
 
-.grid-container-contacto{
-    display: grid;
-    grid-template-areas: 
-    "logo nombre"
-    "logo matricula"
-    "nav contacto"
-    "pie pie";
-    grid-template-rows: 120px 60px 1fr 1fr; 
-    grid-template-columns: 200px 1fr;
-   
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
-    height: 100vh;
-    margin: 0;
-}
-
 #contacto{
-    grid-area: contacto;
+    grid-area: info;
     text-align: center;
     padding-top: 25px;
     border: 1px solid grey;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right:30px;
 }
+
 
 #mapa{
     padding-bottom: 10px;

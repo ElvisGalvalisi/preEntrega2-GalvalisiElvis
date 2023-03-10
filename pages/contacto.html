@@ -13,11 +13,11 @@
         <link rel="shortcut icon" href="../images/logo.jpg">
 </head>
 <body>
-    <div class="grid-container-contacto">
-                
+    <div class="grid-container-info">
         <!--ENCABEZADO DE LA PÁGINA-->
-        <section id="logo" class="estilos">
-            <img src="../images/logo.jpg" alt="logo" width="200" height="180" >
+        <section id="logo">
+            <!-- LOGO -->
+            <img class="logo-cintia" src="../images/logo.jpg" alt="logo">
         </section>
         <section id="nombre" class="estilos">
             <p>Cintia Eliana Bravi</p>
@@ -26,31 +26,36 @@
             <p>MP.:4113</p>
         </section>
         
-        <!--MENÚ -->
         <div class="container">
-            <nav class="navbar navbar-expand-sm sticky-top">  
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-                            <div class="mb-3 mt-3">
-                            <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Buscar</button>
-                        </form>
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="./mi-propuesta.html">Mi propuesta</a>
-                        <a class="nav-link" href="./atencion.html">Atención</a>
-                        <a class="nav-link" href="./recetas.html">Recetas</a>
+            <nav class="navbar navbar-expand-sm sticky-top">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container-fluid">
+                        <div class="navbar-brand flex-sm-column">
+                            <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                                <div class="mb-3 mt-3">
+                                    <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Buscar</button>
+                            </form>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="./mi-propuesta.html">Mi propuesta</a>
+                            <a class="nav-link" href="./atencion.html">Atención</a>
+                            <a class="nav-link" href="./recetas.html">Recetas</a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
+
         <div id="contacto" class="container">
             <h2>Formulario de Contacto</h2>
             <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
 
                 <div class="mb-3 mt-3" class="form-group">
-                    <label for="nombre">Ingrese Nombre completo:</label>
+                    <label for="nombre" >Ingrese Nombre completo:</label>
                     <input type="text" class="form-control" placeholder="Apellido y nombre" name="nombre">
                 </div>
                 <div class="mb-3" class="form-group">
@@ -62,8 +67,8 @@
                     <input type="email" class="form-control" placeholder="nombre@email.com" name="e-mail">
                 </div>
                 <div class="mb-3" class="form-group">
-                <label for="mensaje"> Mensaje:  </label>
-                <textarea name="mensaje" id="mensaje" cols="120" rows="5" placeholder="Deje su mensaje..."></textarea>
+                    <label for="mensaje"> Mensaje:  </label>
+                    <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Deje su mensaje..."></textarea>
                 </div>
                 <div class="mb-3 mt-3">
                     <button type="submit" class="btn btn-primary">Enviar</button>

@@ -10,16 +10,16 @@
     <link rel="shortcut icon" href="./images/logo.jpg">
     <!--Se aplica Bootstrap por medio de CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <!--se aplica estilo de CSS-->
-        <link rel="stylesheet" href="./styles/main.css">
+    <!--se aplica estilo de CSS-->
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <div class="grid-container">
         <!--ENCABEZADO DE LA PÁGINA-->
         
-        <section id="logo" class="estilos">
-            <!--<p>LOGO</p>-->
-            <img src="./images/logo.jpg" alt="logo" width="200" height="180" >
+        <section id="logo">
+            <!--<p>LOGO  width="200" height="180"</p>-->
+            <img class="logo-cintia" src="./images/logo.jpg" alt="logo">
         </section>
         <section id="nombre" class="estilos">
             <p>Cintia Eliana Bravi</p>
@@ -31,24 +31,29 @@
 
         <!---MENÚ DE NAVEGACIÓN-->
         <div class="container">
-            
-            <nav class="navbar navbar-expand-sm sticky-top">  <!--bg-white navbar-white-->
-              <div class="container-fluid">
-                  <div class="navbar-brand flex-sm-column">
-                      <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-                          <div class="mb-3 mt-3">
-                            <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
-                          </div>
-                          <button type="submit" class="btn btn-primary">Buscar</button>
-                        </form>
-                      <a class="nav-link" href="./pages/mi-propuesta.html">Mi Propuesta</a>
-                      <a class="nav-link" href="./pages/atencion.html">Atención</a>
-                      <a class="nav-link" href="./pages/recetas.html">Receteas</a>
-                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </div>
-              </div>
+            <nav class="navbar navbar-expand-sm sticky-top"> 
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container-fluid">
+                        <div class="navbar-brand flex-sm-column">
+                            <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                                <div class="mb-3 mt-3">
+                                    <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
+                                 </div>
+                                 <button type="submit" class="btn btn-primary">Buscar</button>
+                            </form>
+                            <a class="nav-link" href="./pages/mi-propuesta.html">Mi Propuesta</a>
+                            <a class="nav-link" href="./pages/atencion.html">Atención</a>
+                            <a class="nav-link" href="./pages/recetas.html">Receteas</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>        
             </nav>
-      </div>
+        </div>
+
 
         <!---FOTO PRINCIPAL Y PRESENTACIÓN-->
         <div id="foto" class="container">
@@ -56,7 +61,8 @@
                 <h1 class="h1-sobre-mi">Sobre Mi</h1>
             </span>
             <span>
-                <img src="./images/foto-cintia.jpg" alt="foto.jpg" width="390" height="652,8"> <!--width="183,6" height="326,4"367,2-->
+                <!--width="390" height="652,8"-->
+                <img class="foto-cintia" src="./images/foto-cintia.jpg" alt="foto.jpg">
                 <p class="p-soy">Soy Cintia Eliana Bravi, Licenciada en Nutrición y especializada en Alimentación Vegetariana
                  y Vegana en todas las etapas del ciclo vital. También tengo postítulo en Coaching Nutricional,
                   y formo parte de la Sociedad Argentina de Medicina del Estilo de Vida. Además, estoy formando
@@ -65,7 +71,7 @@
                      se lleva a cabo en personas con obesidad prediabetes y diabetes.</p>
             </span> 
             <div id="presentacion" class="container" >
-                <h1 class="h1-mi-formacion">Mi Formación</h1>
+                <h2 class="h2-mi-formacion">Mi Formación</h2>
                 <ul class="lista-formacion" style="list-style: none;">
                     <li>- Licenciada en Nutrición(UNC).</li>
                     <li>- Posgrado  Nutrición Vegetariana y Vegana(UNLP).</li>

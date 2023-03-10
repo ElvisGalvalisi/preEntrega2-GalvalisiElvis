@@ -14,11 +14,11 @@
 </head>
 <body>
 
-    <div class="grid-container-propuesta">
+    <div class="grid-container-info">
         <!--ENCABEZADO DE LA PÁGINA-->
-        <section id="logo" class="estilos">
-            <!--<p>LOGO</p>-->
-            <img src="../images/logo.jpg" alt="logo" width="200" height="180" >
+        <section id="logo">
+            <!-- LOGO  -->
+            <img class="logo-cintia" src="../images/logo.jpg" alt="logo">
         </section>
         <section id="nombre" class="estilos">
             <p>Cintia Eliana Bravi</p>
@@ -28,31 +28,37 @@
         </section>
         
         <div class="container">
-            <nav class="navbar navbar-expand-sm sticky-top">  
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-                            <div class="mb-3 mt-3">
-                              <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Buscar</button>
-                          </form>
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="./atencion.html">Atención</a>
-                        <a class="nav-link" href="./recetas.html">Receteas</a>
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+            <nav class="navbar navbar-expand-sm sticky-top">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container-fluid">
+                        <div class="navbar-brand flex-sm-column">
+                            <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                                <div class="mb-3 mt-3">
+                                    <input type="search" class="form-control" id="search" placeholder="Buscar" name="Buscar">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Buscar</button>
+                            </form>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="./atencion.html">Atención</a>
+                            <a class="nav-link" href="./recetas.html">Receteas</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                         </div>
                     </div>
                 </div>
-              </nav>
+            </nav>
         </div>
+    
         
         <div id="mi-propuesta" class="container">
-            <span>
-                <h1 class="h1-propuesta">Mi Propuesta</h1>  
-            </span>
-            <span>
-                <img src="../images/nutricion-salud2.jpg" alt="imagen de MI PROPUESTA" width="350" height="350" >
-                <p class="p-mi">Trabajo desde una mirada integral de la salud, es decir que no solo revisamos la alimentación
+            
+            <h1 class="h1-propuesta">Mi Propuesta</h1> 
+
+            <img class="foto-propuesta" src="../images/nutricion-salud2.jpg" alt="imagen de MI PROPUESTA">
+            
+            <p class="p-mi">Trabajo desde una mirada integral de la salud, es decir que no solo revisamos la alimentación
                 de acuerdo al contexto de la persona sino que también evaluamos otros Pilares que componen a
                 la Medicina del Estilo de Vida (Actividad Física, manejo del estrés, relaciones interpersonales,
                 Consumo de sustancias tóxicas y Descanso) y el foco de atención está puesto en la mejora de salud
@@ -60,7 +66,6 @@
                 se sienta acompañada entendiendo a esto como un proceso de aprendizaje en el cual yo guio, de manera
                 empática, con escucha activa y sin juzgar, pero quien tiene protagonismo y toma decisiones es la persona
                 consultante.</p>
-            </span>
         </div>
 
         <footer id="pie-de-pagina">
