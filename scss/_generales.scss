@@ -1,0 +1,89 @@
+
+.container {
+    /*background-color:$color_1;*/
+    background-image: linear-gradient($color_1, $color_2);
+    max-width: 100%;
+    a {
+    text-decoration: none;
+    }
+}
+
+
+#logo {
+    grid-area: logo;
+    transition: transform 2000ms;
+
+    .logo-cintia{
+        @include sizes(200px,180px);
+        
+
+    }
+    
+    @media(max-width: 575px){
+        .logo-cintia{
+            @include sizes(150px, 120px);
+        }
+    
+    }
+}
+
+#logo:hover{
+    @include sizes(220px, 200px);
+    transform: rotate(360deg);
+}
+
+@media(max-width: 575px){
+    #logo{
+        text-align: center;
+        @include sizes(auto, auto);
+        background-color: $color_2;
+    }
+}
+
+#nombre {
+    grid-area: nombre;
+    text-align: center;
+    background-color: $color_2;
+    font-family: $kaushan, cursive;
+    font-size: 50px;
+
+    transition: font-size 3000ms;
+}
+
+#nombre:hover{
+    font-size: 70px; 
+}
+
+
+@media(max-width: 650px){
+    #nombre{
+        font-size: 40px;
+    }
+}
+
+#matricula {
+    grid-area: matricula;
+    text-align: center;
+    background-color: $color_2;
+    font-family: $kaushan;
+    font-size: 20px;
+}
+
+#pie-de-pagina{
+    grid-area: pie;
+    display: inline-block;
+    text-align: center;
+    background-color: $color_3;
+    height: 100px;
+    padding-top: 20px; 
+
+    .by{
+        text-align: right;
+        margin-right: 30px; /*180*/
+        }
+   
+    .copyright{
+        padding-top: 10px;
+        font-size: 10px;
+        }
+} 

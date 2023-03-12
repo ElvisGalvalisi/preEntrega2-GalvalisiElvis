@@ -1,0 +1,13 @@
+
+/* Estilos componentes */
+
+$estilo_bordes: 1px solid grey;
+
+@keyframes efecto-1 {
+    0%{ color: $color_3; }
+   10%{ color: black; }
+   25%{ color: $color_3; }
+   50%{ color: black;}
+   75%{ color: $color_3;}
+   100%{ color: black;}
+}

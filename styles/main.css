@@ -1,376 +1,351 @@
-
-/*--------------aplica para todas las paginas--------------------*/ 
-
-.container {
-    background-color: rgb(241, 237, 220);
-    max-width: 100%; 
+/* variables colores */ /* Estilos componentes */
+@keyframes efecto-1 {
+  0% {
+    color: rgb(117, 153, 122);
+  }
+  10% {
+    color: black;
+  }
+  25% {
+    color: rgb(117, 153, 122);
+  }
+  50% {
+    color: black;
+  }
+  75% {
+    color: rgb(117, 153, 122);
+  }
+  100% {
+    color: black;
+  }
 }
-
+/* Fuentes */
 @font-face {
-    font-family: 'Kaushan Script Regular';
-    src: url("../fonts/KaushanScript-Regular.ttf");
+  font-family: "Kaushan Script Regular";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+.container {
+  /*background-color:$color_1;*/
+  background-image: linear-gradient(rgb(241, 237, 220), rgb(206, 225, 223));
+  max-width: 100%;
+}
+.container a {
+  text-decoration: none;
 }
 
-#logo{
-    grid-area: logo;
-
+#logo {
+  grid-area: logo;
+  transition: transform 2000ms;
 }
-/*400*/
-@media(max-width: 750px){
-    #logo2{
-        text-align: center;
-        width: auto;
-        height:auto;
-        background-color:rgb(206, 225, 223);
-    }
+#logo .logo-cintia {
+  width: 200px;
+  height: 180px;
 }
-@media(max-width: 580px){
-    #logo{
-        text-align: center;
-        width: auto;
-        height:auto;
-        background-color:rgb(206, 225, 223);
-    }
+@media (max-width: 575px) {
+  #logo .logo-cintia {
+    width: 150px;
+    height: 120px;
+  }
 }
 
-.logo-cintia{
-    width: 200px;
-    height: 180px;
-}
-
-@media(max-width: 575px){
-    .logo-cintia{
-        width: 150px;
-        height: 120px;
-    }
-
-}
-
-
-#nombre {
-    grid-area: nombre;
-    text-align: center;
-    background-color:rgb(206, 225, 223);
-    font-family: 'Kaushan Script Regular', cursive;
-    font-size: 50px;
-    /*padding-top: 0px;*/
-}
-/*se agrega media queries para adaptar a mobile*/
-@media(max-width: 650px){
-    #nombre{
-        font-size: 40px; /*40px*/
-       /* padding-top: auto; 50px*/
-    }
-}
-
-#matricula {
-    grid-area: matricula;
-    text-align: center;
-    background-color:rgb(206, 225, 223);
-    font-family: 'Kaushan Script Regular';
-    font-size: 20px;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-#pie-de-pagina{
-    grid-area: pie;
-    display: inline-block;
-    text-align: center;
-    background-color:rgb(206, 225, 223);
-    height: 100px;
-    padding-top: 20px; 
-}
-
-.by{
-    text-align: right;
-    margin-right: 30px; /*180*/
-}
-.copyright{
-    padding-top: 10px;
-    font-size: 10px;
-}
-
-
-/*--------------aplica para el index--------------------*/ 
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    "logo nombre"
-    "logo matricula"
-    "nav foto"
-    "nav presentacion"
-    "pie pie";
-    grid-template-rows: 120px 60px 1fr 1fr 75px; 
-    grid-template-columns: 200px 1fr;
-    /*border: 2px solid black;*/
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
-    height: 100vh;
-    margin: 0;
-}
-/*               */
-@media(max-width: 575px){
-    .grid-container{
-        grid-template-areas: 
-        "logo"
-        "nombre"
-        "matricula" 
-        "nav" 
-        "foto"
-        "presentacion"
-        "pie";
-        grid-template-rows: 120px 60px 1fr 1fr 1fr 1fr 75px; 
-        grid-template-columns:100%;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-
-        margin-left: 0px;
-        margin-right: 0px;
-        }
-    
-}
-
-.h1-sobre-mi{
-    text-align: center;
-    font-family: 'Tahoma';    
-}
-.p-soy {
-    text-align: justify;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family:'Tahoma';
-    font-size: 130%;
-}
-
-#foto{
-    grid-area: foto;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    border: 1px solid grey;
-}
-
-@media(max-width: 600px){
-    #foto{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.foto-cintia{
-    width: 390px;
-    height: 652.8px;
-}
-
-@media(max-width: 600px){
-    .foto-cintia{
-        width: 260px; 
-        height: 435.2px; 
-    }
-}
-
-#presentacion{
-    grid-area: presentacion;
-    text-align:center;
-    font-family: 'Tahoma';
-}
-
-.lista-formacion{
-    text-align: left;
-     margin-left:30px;
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-
-
-
-/*-----------------------pagina mi-propuesta----------------------*/
-#mi-propuesta{
-    grid-area: info;
-    text-align: center;
-    padding-top: 25px;
-    border: 1px solid grey;
-}
-
-
-@media(max-width: 860px){
-    #mi-propuesta{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.foto-propuesta{
-    height: 550px; 
-    width: 550px; 
-}
-
-@media(max-width: 900px){
-    .foto-propuesta {
-        height: 350px;
-        width: 350px;
-    }
-}
-
-.h1-propuesta{
-    padding-bottom: 25px;
-}
-.p-mi{
-    text-align: justify;
-    padding-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family:'Tahoma';
-    font-size: 100%;
-}
-.grid-container-info{
-    display: grid;
-    grid-template-areas: 
-    "logo nombre"
-    "logo matricula"
-    "nav info"
-    "pie pie";
-    grid-template-rows: 120px 60px 1fr 75px; 
-    grid-template-columns: 200px 1fr;
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
-    height: 100vh;
-    margin: 0;
-}
-
-@media(max-width: 575px){
-    .grid-container-info{
-        grid-template-areas: 
-    "logo" 
-    "nombre"
-    "matricula"
-    "nav" 
-    "info"
-    "pie";
-    grid-template-rows: 120px 60px 1fr 1fr 1fr 75px; 
-    grid-template-columns: 100%;
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    margin-left: 0px;
-    margin-right: 0px;
-
-    }
-}
-
-/*-----------------------pagina atención----------------------*/
-
-.foto-atencion-v{
-    width: 300px;
-    height: 300px;
-}
-@media(max-width: 575px){
-    .foto-atencion-v{
-        width: 200px;
-        height: 200px;
-
-    }
-}
-
-.p-virtual{
-    text-align: justify;
-    padding-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family:'Tahoma';
-    font-size: 130%;
-}
-
-.foto-gardenia{
-    width: 300px;
-    height: 300px;
-}
-
-@media(max-width: 575px){
-    .foto-gardenia{
-        width: 200px;
-        height: 200px;
-
-    }
-}
-
-.p-consultorio{
-    text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 20px;
-}
-#atencion{
-    grid-area: info;
-    text-align: center;
-    padding-top: 25px;
-    border: 1px solid grey;
-}
-.h1-atencion{
-    padding-bottom: 25px;
-}
-
-/*-----------------------pagina recetas----------------------*/
-
-#recetas{
-    grid-area: info;
-    text-align: center;
-    padding-top: 25px;
-    border: 1px solid grey;
-}
-
-.foto-receta{
-    width: 200px;
-    height: 200px;
+#logo:hover {
+  width: 220px;
+  height: 200px;
+  transform: rotate(360deg);
 }
 
 @media (max-width: 575px) {
-    .foto-receta{
-        width: 100px;
-        height: 100px; 
-    }
-    
-}
-
-.p-recetas{
-    text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-.h1-recetas{
-    padding-bottom: 25px;
-}
-
-.h2-recetas{
-    padding-bottom: 10px;
-}
-
-/*-----------------------pagina Contacto----------------------*/
-
-#contacto{
-    grid-area: info;
+  #logo {
     text-align: center;
-    padding-top: 25px;
-    border: 1px solid grey;
-    padding-left: 30px;
-    padding-right:30px;
+    width: auto;
+    height: auto;
+    background-color: rgb(206, 225, 223);
+  }
+}
+#nombre {
+  grid-area: nombre;
+  text-align: center;
+  background-color: rgb(206, 225, 223);
+  font-family: "Kaushan Script Regular", cursive;
+  font-size: 50px;
+  transition: font-size 3000ms;
 }
 
-
-#mapa{
-    padding-bottom: 10px;
-    padding-top: 10px;  
-    text-align: center;
+#nombre:hover {
+  font-size: 70px;
 }
+
+@media (max-width: 650px) {
+  #nombre {
+    font-size: 40px;
+  }
+}
+#matricula {
+  grid-area: matricula;
+  text-align: center;
+  background-color: rgb(206, 225, 223);
+  font-family: "Kaushan Script Regular";
+  font-size: 20px;
+}
+
+#pie-de-pagina {
+  grid-area: pie;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(117, 153, 122);
+  height: 100px;
+  padding-top: 20px;
+}
+#pie-de-pagina .by {
+  text-align: right;
+  margin-right: 30px; /*180*/
+}
+#pie-de-pagina .copyright {
+  padding-top: 10px;
+  font-size: 10px;
+}
+
+/*--------------aplica para el index--------------------*/
+.grid-container {
+  display: grid;
+  grid-template-areas: "logo nombre" "logo matricula" "nav foto" "nav presentacion" "pie pie";
+  grid-template-rows: 120px 60px 1fr 1fr 75px;
+  grid-template-columns: 200px 1fr;
+  /*border: 2px solid black;*/
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .grid-container {
+    grid-template-areas: "logo" "nombre" "matricula" "nav" "foto" "presentacion" "pie";
+    grid-template-rows: 120px 60px 1fr 1fr 1fr 1fr 75px;
+    grid-template-columns: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+#foto {
+  grid-area: foto;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid grey;
+}
+@media (max-width: 600px) {
+  #foto #foto {
+    width: 100%;
+    height: 100%;
+  }
+}
+#foto .h1-sobre-mi {
+  text-align: center;
+  font-family: "Tahoma";
+  color: black;
+  animation-name: efecto-1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+#foto .foto-cintia {
+  width: 390px;
+  height: 652.8px;
+}
+@media (max-width: 600px) {
+  #foto .foto-cintia {
+    width: 260px;
+    height: 435.2px;
+  }
+}
+#foto .p-soy {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+  /*text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family:$tahoma;
+  font-size: 130%;*/
+}
+#foto #presentacion {
+  grid-area: presentacion;
+  text-align: center;
+  font-family: "Tahoma";
+}
+#foto #presentacion .lista-formacion {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+  /*
+  text-align: left;
+  margin-left:30px;
+  margin-right: 30px;
+  font-size: 20px;*/
+}
+
+/*--------------aplica para todas las paginas--------------------*/
+.grid-container-info {
+  display: grid;
+  grid-template-areas: "logo nombre" "logo matricula" "nav info" "pie pie";
+  grid-template-rows: 120px 60px 1fr 75px;
+  grid-template-columns: 200px 1fr;
+  height: 100vh;
+  margin: 0;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.grid-container-info #mi-propuesta {
+  grid-area: info;
+  text-align: center;
+  padding-top: 25px;
+  border: 1px solid grey;
+}
+.grid-container-info #mi-propuesta .h1-propuesta {
+  padding-bottom: 25px;
+}
+.grid-container-info #mi-propuesta .foto-propuesta {
+  width: 550px;
+  height: 550px;
+}
+@media (max-width: 900px) {
+  .grid-container-info #mi-propuesta .foto-propuesta {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .grid-container-info #mi-propuesta .foto-propuesta {
+    width: 200px;
+    height: 200px;
+  }
+}
+.grid-container-info #mi-propuesta .p-mi {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+}
+.grid-container-info #atencion {
+  grid-area: info;
+  text-align: center;
+  padding-top: 25px;
+  border: 1px solid grey;
+}
+.grid-container-info #atencion .h1-atencion {
+  padding-bottom: 25px;
+}
+.grid-container-info #atencion .foto-atencion-v {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 575px) {
+  .grid-container-info #atencion .foto-atencion-v {
+    width: 200px;
+    height: 200px;
+  }
+}
+.grid-container-info #atencion .p-virtual {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+}
+.grid-container-info #atencion .foto-gardenia {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 575px) {
+  .grid-container-info #atencion .foto-gardenia {
+    width: 200px;
+    height: 200px;
+  }
+}
+.grid-container-info #atencion .p-consultorio {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+  /*text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;*/
+}
+.grid-container-info #recetas {
+  grid-area: info;
+  text-align: center;
+  padding-top: 25px;
+  border: 1px solid grey;
+}
+.grid-container-info #recetas .h1-recetas {
+  padding-bottom: 25px;
+}
+.grid-container-info #recetas .foto-receta {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 575px) {
+  .grid-container-info #recetas .foto-receta {
+    width: 100px;
+    height: 100px;
+  }
+}
+.grid-container-info #recetas .h2-recetas {
+  padding-bottom: 10px;
+}
+.grid-container-info #recetas .p-recetas {
+  text-align: justify;
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Tahoma";
+  font-size: 110%;
+  /*
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;*/
+}
+.grid-container-info #contacto {
+  grid-area: info;
+  text-align: center;
+  padding-top: 25px;
+  border: 1px solid grey;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid-container-info #contacto #mapa {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .grid-container-info {
+    grid-template-areas: "logo" "nombre" "matricula" "nav" "info" "pie";
+    grid-template-rows: 120px 60px 1fr 1fr 1fr 75px;
+    grid-template-columns: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

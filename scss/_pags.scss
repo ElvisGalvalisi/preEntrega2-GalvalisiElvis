@@ -1,0 +1,167 @@
+
+/*--------------aplica para todas las paginas--------------------*/ 
+
+.grid-container-info {
+    
+    display: grid;
+    grid-template-areas: 
+    "logo nombre"
+    "logo matricula"
+    "nav info"
+    "pie pie";
+    grid-template-rows: 120px 60px 1fr 75px; 
+    grid-template-columns: 200px 1fr;
+
+    height: 100vh;
+    margin: 0;
+    
+    @include estilos-grid-gap;
+
+
+
+    #mi-propuesta{
+        grid-area: info;
+        @include grid-cuerpo-pag;
+    
+        .h1-propuesta{
+        padding-bottom: 25px;
+        }
+    
+        .foto-propuesta{
+            @include sizes(550px, 550px);
+        }
+        @media(max-width: 900px){
+            .foto-propuesta {
+                @include sizes(300px, 300px);
+
+            }
+        }
+        @media(max-width: 400px){
+            .foto-propuesta {
+                @include sizes(200px, 200px);
+            }
+        }
+    
+        .p-mi{
+            @include estilo_p;
+        }
+       
+    }
+
+
+    #atencion{
+        grid-area: info;
+        @include grid-cuerpo-pag;
+    
+        .h1-atencion{
+            padding-bottom: 25px;
+        }
+    
+        .foto-atencion-v{
+            @include sizes(300px, 300px);
+        }
+
+        @media(max-width: 575px){
+            .foto-atencion-v{
+                @include sizes(200px, 200px);
+        
+            }
+        }
+    
+        .p-virtual{
+            @include estilo_p;
+        }
+    
+        .foto-gardenia{
+            @include sizes(300px, 300px);
+        }
+        
+        @media(max-width: 575px){
+            .foto-gardenia{
+                @include sizes(200px, 200px);
+                
+        
+            }
+        }
+    
+        .p-consultorio{
+            @include estilo_p;
+
+            /*text-align: left;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;*/
+        }
+    }
+
+    #recetas{
+        grid-area: info;
+        @include grid-cuerpo-pag;
+    
+        .h1-recetas{
+            padding-bottom: 25px;
+        }
+    
+        .foto-receta{
+            @include sizes(200px, 200px);
+        }
+    
+        @media (max-width: 575px) {
+            .foto-receta{
+                @include sizes(100px, 100px);
+            }    
+        }
+    
+        .h2-recetas{
+            padding-bottom: 10px;
+        }
+    
+        .p-recetas{
+            @include estilo_p;
+           
+            /*
+            text-align: left;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;*/
+        }
+    
+    
+    }
+
+    #contacto{
+        grid-area: info;
+        @include grid-cuerpo-pag;
+        padding-left: 30px;
+        padding-right:30px;
+    
+        #mapa{
+            padding-bottom: 10px;
+            padding-top: 10px;  
+            text-align: center;
+        }
+    }
+
+}
+
+@media(max-width: 575px){
+    .grid-container-info{
+
+        grid-template-areas: 
+        "logo" 
+        "nombre"
+        "matricula"
+        "nav" 
+        "info"
+        "pie";
+        grid-template-rows: 120px 60px 1fr 1fr 1fr 75px; 
+        grid-template-columns: 100%;
+    
+   @include estilos-grid-gap;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    }
+}
+
